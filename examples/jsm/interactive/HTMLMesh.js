@@ -260,7 +260,7 @@ function html2canvas( element ) {
 
 			return;
 
-		} else if ( element instanceof HTMLCanvasElement ) {
+		} else if ( element instanceof HTMLCanvasElement || element.tagName == 'IMG' ) {
 
 			// Canvas element
 			if ( element.style.display === 'none' ) return;
